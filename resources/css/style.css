@@ -122,6 +122,35 @@ footer .copyright{
   margin-right: auto;
 }
 
+@media screen and (max-width: 768px) {
+  .desktop-navigation {
+    display: none;
+  }
+
+  .mobile-navigation {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo span {
+    display: none;
+  }
+
+  footer .container{
+    display: block;
+  }
+
+  footer a{
+    margin: 0 16px 0 0;
+  }
+  
+  footer nav{
+    margin-top: 16px;
+  }
+
+}
+
 /* Stage */
 #stage {
   margin-top: 64px;
@@ -131,17 +160,20 @@ footer .copyright{
 #stage .container{
   align-items: center;
   display: flex;
-  padding-top: 48px;
-  padding-bottom: 48px;
 }
 
 #stage img {
-  margin-right: 48px;
+  width: 100%;
+}
+
+.stage-img-container {
+  padding: 32px 28px 32px 0;
   width: 60%;
 }
 
 .stage-info {
   width: 40%;
+  padding-left: 16px;
 }
 
 .stage-info p {
@@ -192,9 +224,7 @@ footer .copyright{
 
 /* Teaser L */
 .teaser-l {
-  margin-right: 48px;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding: 48px 28px 48px 0;
   width: 60%;
 }
 
@@ -223,6 +253,7 @@ footer .copyright{
 
 #first-section.teaser-s:last-child {
   background-color: #d8d8d8;
+  border-bottom: none;
 }
 
 #thesis.teaser-s,
@@ -246,7 +277,7 @@ footer .copyright{
 
 .teaser-s-text {
   width: 60%;
-  padding-right: 16px;
+  padding: 8px 16px 8px 0;
 }
 
 /* Start learning */
